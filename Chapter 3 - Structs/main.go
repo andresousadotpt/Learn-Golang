@@ -6,9 +6,12 @@ Struct is a collection type which is a type which contains other types
 
 Struct is a struct with K, V pairs
 
-*/
 
-// type STRUCT_NAME struct {IMPLEMENTATION}
+** Nested Structs
+
+Here in car and Wheel we have a nested structs
+
+*/
 
 type Car struct {
 	make   string
@@ -40,10 +43,6 @@ type car struct {
 
 but we should favor using named structs
 
-*/
-
-/*
-
 Embeded structs
 
 type car struct {
@@ -52,8 +51,8 @@ type car struct {
 }
 
 type truck struct {
-	// "car" is embeded, so the definition of truck now
-	// also additionally contains all of the fields of the car struct
+	"car" is embeded, so the definition of truck
+	 also contains all of the fields of the car struct
 	car
 	bedSize int
 }
@@ -64,9 +63,6 @@ if we had a nested struct and we wanted to access the trucks make
 we would need to do like `truck.car.make`
 but with embeded structs we only need to do `truck.make`
 
-
-*/
-/*
 
 Struct methods
 Methods that are defined as structs.
