@@ -1,0 +1,36 @@
+Only main packages will have main function
+
+Package naming
+
+By convention, a package's name is the same as the last element of its import path.
+For instance, the math/rand package comprises files that begin with:
+`package rand`
+
+
+
+A directory of Go code can have at most one package. All .go files in a single directory must all belong to the same package.
+
+
+
+Go module
+
+Go programs are organized into packages. A package is a directory of Go code that's all compiled together.
+Functions, types, variables, and constants defined in one source file are visible to all other source files within the same package (directory)
+
+A repository contains one or more modules. A module is a collection of go packages that are released together.
+
+
+
+The `go run` command is used to quickly compile and run a Go package.
+
+Use `go build`instead to compile production executables
+
+The use of go run its to quickly do some testing or debugging
+
+Or just use make to fast and easy things
+
+
+`go install` is good to compile our code then install it globally in our computer so we can do hellogo in this example globally
+
+
+Custom package
